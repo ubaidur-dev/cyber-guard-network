@@ -30,7 +30,6 @@ export default function Navbar() {
           </div>
           </Link>
 
-          {/* Navigation Menu */}
           <NavigationMenu>
             <NavigationMenuList>
               {navLinks.map((link) => (
@@ -43,9 +42,7 @@ export default function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* Right Section: Search & CTA */}
           <div className="hidden lg:flex items-center gap-4">
-            {/* Search Input */}
             <div className="relative group">
               <input
                 type="text"
@@ -55,7 +52,6 @@ export default function Navbar() {
               <Search className="absolute right-3 top-2.5 w-4 h-4 text-accent pointer-events-none" />
             </div>
 
-            {/* CTA Button */}
             <Link href="/join">
               <Button
                 size="lg"
@@ -67,7 +63,6 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="lg:hidden p-2 rounded-lg hover:bg-primary/10 transition-colors text-foreground"
@@ -76,7 +71,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="lg:hidden bg-card/50 backdrop-blur-md border-t border-primary/30 py-4 space-y-3">
             {navLinks.map((link) => (
