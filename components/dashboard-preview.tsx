@@ -5,9 +5,7 @@ import { Activity, AlertTriangle, Globe } from "lucide-react"
 export default function DashboardPreview() {
   return (
     <div className="relative">
-      {/* Glowing border container */}
-      <div className="relative p-6 rounded-2xl glassmorphism glow-border overflow-hidden">
-        {/* Dashboard grid background */}
+     <div className="relative p-6 rounded-2xl glassmorphism glow-border overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -19,9 +17,7 @@ export default function DashboardPreview() {
           </svg>
         </div>
 
-        {/* Content */}
         <div className="relative z-10 space-y-6">
-          {/* Header */}
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-semibold text-foreground">Security Dashboard</h3>
             <div className="flex gap-2">
@@ -30,7 +26,6 @@ export default function DashboardPreview() {
             </div>
           </div>
 
-          {/* Threat Status Cards */}
           <div className="grid grid-cols-2 gap-3">
             <div className="p-3 rounded-lg bg-background/50 border border-primary/20 hover:border-primary/40 transition">
               <p className="text-xs text-slate-400 mb-1">Active Threats</p>
@@ -42,7 +37,6 @@ export default function DashboardPreview() {
             </div>
           </div>
 
-          {/* Chart Area */}
           <div className="h-32 rounded-lg bg-background/30 border border-slate-700/50 p-3 flex items-end gap-2 justify-center">
             {[40, 60, 45, 70, 55, 75, 50].map((height, i) => (
               <div
@@ -53,7 +47,6 @@ export default function DashboardPreview() {
             ))}
           </div>
 
-          {/* Activity List */}
           <div className="space-y-2">
             <p className="text-xs font-semibold text-slate-300">Recent Activity</p>
             <div className="space-y-2">
